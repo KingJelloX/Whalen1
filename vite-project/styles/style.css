@@ -1,16 +1,33 @@
 #app {
-	font-family: Avenir, Helvetica, Arial, sans-serif;
+	font-family: 'Bitter', serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	text-align: center;
 	color: #2c3e50;
 	margin-top: 60px;
 }
-
 :root {
 	--primary-color: #011725;
 	--border: #A9A17B 
 	--highlight-1: #08d5d9;
 	--search-border: #594A29;
 	--text-color:#BEB38A;
+	--heading-color: #111111;
+  }
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  color: var(--text-color);
+}
+header{
+	background-color: var(--heading-color);
+	margin: -9rem;
+	font-size: 8rem;
+	display: flex;
+	height: 16rem;
+	align-items: center;
+	justify-content: center;
   }
