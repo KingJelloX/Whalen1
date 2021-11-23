@@ -14,10 +14,3 @@
   --search-border: #594A29;
   --text-color:#BEB38A
 }
-body {
-<<<<<<< Updated upstream
-	background-color: red;
-=======
-  background-color: var(--primary-color);
->>>>>>> Stashed changes
-}
