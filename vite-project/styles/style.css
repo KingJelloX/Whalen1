@@ -31,3 +31,11 @@ header{
 	align-items: center;
 	justify-content: center;
   }
+.shop-Window{
+display: flex;
+height: 80rem;
+width:  70vw;
+margin-top: 10rem; 
+margin-left: 5rem;
+background-color: grey;
+}
