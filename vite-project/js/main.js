@@ -1,9 +1,9 @@
 import "../styles/style.css";
-import { mythic } from "./mythic-items";
-import { legendary } from "./legendary-items";
-import { epic } from "./epic-items";
-import { basic } from "./basic-items";
-import { starter } from "./starter-items";
+import { mythic } from "./items/mythic-items";
+import { legendary } from "./items/legendary-items";
+import { epic } from "./items/epic-items";
+import { basic } from "./items/basic-items";
+import { starter } from "./items/starter-items";
 
 const domSelector = {
 	mythicDiv: document.querySelector(".shop-window-itemDisplay-mythic"),
