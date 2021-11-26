@@ -1,41 +1,101 @@
+@import url(variables.css);
+
 #app {
-	font-family: 'Bitter', serif;
+	font-family: "Bitter", serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	text-align: center;
 	color: #2c3e50;
-	margin-top: 60px;
 }
-:root {
-	--primary-color: #011725;
-	--border: #A9A17B 
-	--highlight-1: #08d5d9;
-	--search-border: #594A29;
-	--text-color:#BEB38A;
-	--heading-color: #111111;
-  }
+
 html,
-body {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-size: 62.5%;
-  color: var(--text-color);
+body,
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-size: 62.5%;
+	color: var(--text-color);
 }
-header{
+
+header {
 	background-color: var(--heading-color);
-	margin: -9rem;
 	font-size: 8rem;
 	display: flex;
 	height: 16rem;
 	align-items: center;
 	justify-content: center;
-  }
-.shop-window{
-display: flex;
-height: 80rem;
-width:  70vw;
-margin-top: 10rem; 
-margin-left: 5rem;
-background-color: grey;
+}
+
+.shop-window {
+	display: flex;
+	position: relative;
+	height: 80rem;
+	width: 70vw;
+	margin: auto;
+	margin-top: 9%;
+	background-color: grey;
+	flex-direction: column;
+}
+
+.shop-navbar {
+	position: absolute;
+	width: 65%;
+	height: 20%;
+	z-index: 1;
+	background-color: blue;
+}
+
+.shop-window-itemDisplay {
+	position: absolute;
+	bottom: 0;
+	width: 65%;
+	height: 80%;
+	background-color: red;
+	display: flex;
+	flex-direction: column;
+}
+
+.shop-window-itemDisplay-mythic {
+	display: flex;
+	width: 100%;
+	background-color: purple;
+	flex-wrap: wrap;
+}
+
+.shop-window-itemDisplay-legendary {
+	display: flex;
+	width: 100%;
+	background-color: pink;
+	flex-wrap: wrap;
+}
+
+.shop-window-itemDisplay-epic {
+	display: flex;
+	width: 100%;
+	background-color: orange;
+	flex-wrap: wrap;
+}
+
+.shop-window-itemDisplay-basic {
+	display: flex;
+	width: 100%;
+	background-color: yellow;
+	flex-wrap: wrap;
+}
+
+.shop-window-itemDisplay-starter {
+	display: flex;
+	width: 100%;
+	background-color: palegoldenrod;
+	flex-wrap: wrap;
+}
+
+.shop-window-Description {
+	position: absolute;
+	display: flex;
+	background-color: green;
+	right: 0;
+	width: 35%;
+	height: 100%;
 }
