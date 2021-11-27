@@ -13,7 +13,7 @@ function insertItems(items) {
 			domSelectorDiv.mythicDiv.insertAdjacentHTML(
 				"afterbegin",
 				`<div>
-            <img class="item" src="../images/${items[i].icon}" />
+            <img class="item" id="${items[i].icon}" src="../images/${items[i].icon}" />
 		    <p>${items[i].cost}</p>
 		</div>`
 			);
@@ -21,7 +21,7 @@ function insertItems(items) {
 			domSelectorDiv.legendaryDiv.insertAdjacentHTML(
 				"afterbegin",
 				`<div>
-            <img class="item" src="../images/${items[i].icon}" />
+            <img class="item" id="${items[i].icon}" src="../images/${items[i].icon}" />
 		    <p>${items[i].cost}</p>
 		</div>`
 			);
@@ -29,7 +29,7 @@ function insertItems(items) {
 			domSelectorDiv.epicDiv.insertAdjacentHTML(
 				"afterbegin",
 				`<div>
-            <img class="item" src="../images/${items[i].icon}" />
+            <img class="item" id="${items[i].icon}" src="../images/${items[i].icon}" />
 		    <p>${items[i].cost}</p>
 		</div>`
 			);
@@ -37,7 +37,7 @@ function insertItems(items) {
 			domSelectorDiv.basicDiv.insertAdjacentHTML(
 				"afterbegin",
 				`<div>
-            <img class="item" src="../images/${items[i].icon}" />
+            <img class="item" id="${items[i].icon}" src="../images/${items[i].icon}" />
 		    <p>${items[i].cost}</p>
 		</div>`
 			);
@@ -45,7 +45,7 @@ function insertItems(items) {
 			domSelectorDiv.starterDiv.insertAdjacentHTML(
 				"afterbegin",
 				`<div>
-            <img class="item" src="../images/${items[i].icon}" />
+            <img class="item" id="${items[i].icon}" src="../images/${items[i].icon}" />
 		    <p>${items[i].cost}</p>
 		</div>`
 			);

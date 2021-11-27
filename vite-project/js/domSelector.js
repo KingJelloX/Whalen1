@@ -4,7 +4,7 @@ const domSelectorDiv = {
 	epicDiv: document.querySelector(".shop-window-itemDisplay-epic"),
 	basicDiv: document.querySelector(".shop-window-itemDisplay-basic"),
 	starterDiv: document.querySelector(".shop-window-itemDisplay-starter"),
-	description: document.querySelector(".shop-window-description"),
+	description: document.querySelector(".shop-window-description-image"),
 };
 
 const domSelectorIcon = {
