@@ -1,61 +1,46 @@
 import "../styles/style.css";
+import { domSelectorDiv, domSelectorIcon } from "./domSelector";
 import { mythic } from "./items/mythic-items";
 import { legendary } from "./items/legendary-items";
 import { epic } from "./items/epic-items";
 import { basic } from "./items/basic-items";
 import { starter } from "./items/starter-items";
+import { clearItems, insertItems } from "./function";
 
-const domSelector = {
-	mythicDiv: document.querySelector(".shop-window-itemDisplay-mythic"),
-	legendaryDiv: document.querySelector(".shop-window-itemDisplay-legendary"),
-	epicDiv: document.querySelector(".shop-window-itemDisplay-epic"),
-	basicDiv: document.querySelector(".shop-window-itemDisplay-basic"),
-	starterDiv: document.querySelector(".shop-window-itemDisplay-starter"),
-};
+const allItems = basic.concat(epic, legendary, mythic, starter);
 
-for (var i = 0; i < mythic.length; i++) {
-	domSelector.mythicDiv.insertAdjacentHTML(
-		"afterbegin",
-		`<div>
-            <img src="../images/${mythic[i].icon}" />
-		    <p>${mythic[i].cost}</p>
-		</div>`
-	);
-}
+const fighterItems = allItems.filter((item) => item.class.includes("fighter"));
+const marksmanItems = allItems.filter((item) =>
+	item.class.includes("marksman")
+);
+const assassinItems = allItems.filter((item) =>
+	item.class.includes("assassin")
+);
+const mageItems = allItems.filter((item) => item.class.includes("mage"));
+const tankItems = allItems.filter((item) => item.class.includes("tank"));
+const supportItems = allItems.filter((item) => item.class.includes("support"));
 
-for (var i = 0; i < legendary.length; i++) {
-	domSelector.legendaryDiv.insertAdjacentHTML(
-		"afterbegin",
-		`<div>
-            <img src="../images/${legendary[i].icon}" />
-		    <p>${legendary[i].cost}</p>
-		</div>`
-	);
-}
-for (var i = 0; i < epic.length; i++) {
-	domSelector.epicDiv.insertAdjacentHTML(
-		"afterbegin",
-		`<div>
-            <img src="../images/${epic[i].icon}" />
-		    <p>${epic[i].cost}</p>
-		</div>`
-	);
-}
-for (var i = 0; i < basic.length; i++) {
-	domSelector.basicDiv.insertAdjacentHTML(
-		"afterbegin",
-		`<div>
-            <img src="../images/${basic[i].icon}" />
-		    <p>${basic[i].cost}</p>
-		</div>`
-	);
-}
-for (var i = 0; i < starter.length; i++) {
-	domSelector.starterDiv.insertAdjacentHTML(
-		"afterbegin",
-		`<div>
-            <img src="../images/${starter[i].icon}" />
-		    <p>${starter[i].cost}</p>
-		</div>`
-	);
-}
+domSelectorIcon.fighter.addEventListener("click", function () {
+	clearItems();
+	insertItems(fighterItems);
+});
+domSelectorIcon.marksman.addEventListener("click", function () {
+	clearItems();
+	insertItems(marksmanItems);
+});
+domSelectorIcon.assassin.addEventListener("click", function () {
+	clearItems();
+	insertItems(assassinItems);
+});
+domSelectorIcon.mage.addEventListener("click", function () {
+	clearItems();
+	insertItems(mageItems);
+});
+domSelectorIcon.tank.addEventListener("click", function () {
+	clearItems();
+	insertItems(tankItems);
+});
+domSelectorIcon.support.addEventListener("click", function () {
+	clearItems();
+	insertItems(supportItems);
+});

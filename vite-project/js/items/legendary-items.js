@@ -2,6 +2,7 @@ const legendary = [
 	{
 		name: "Guardian Angel",
 		type: "legendary",
+		class: ["figher", "marksman", "assassin"],
 		cost: 2800,
 		icon: "Guardian_Angel_item.png",
 		stats: ["+40 attack damage", "+40 armor"],

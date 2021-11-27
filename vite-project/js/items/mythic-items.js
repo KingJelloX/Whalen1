@@ -2,6 +2,7 @@ const mythic = [
 	{
 		name: "Luden's Tempest",
 		type: "mythic",
+		class: ["mage"],
 		cost: 3200,
 		icon: "Luden_Tempest_item.png",
 		stats: [
@@ -16,6 +17,7 @@ const mythic = [
 	{
 		name: "Duskblade of Draktharr",
 		type: "mythic",
+		class: ["assassin"],
 		cost: 3100,
 		icon: "Duskblade_of_Draktharr_item.png",
 		stats: [
