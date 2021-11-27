@@ -7,6 +7,7 @@ const domSelectorDiv = {
 };
 
 const domSelectorIcon = {
+	all: document.querySelector("#all"),
 	fighter: document.querySelector("#fighter"),
 	marksman: document.querySelector("#marksman"),
 	assassin: document.querySelector("#assassin"),
