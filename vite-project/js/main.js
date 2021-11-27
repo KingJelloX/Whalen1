@@ -59,6 +59,15 @@ const domSelectorItem = {
 
 domSelectorItem.item.forEach((item) =>
 	item.addEventListener("click", function () {
-		alert("Please");
+		console.log(this.getAttribute("src"));
+
+		domSelectorDiv.description.insertAdjacentHTML(
+			"afterbegin",
+			`<img class="item shop-window-description-image" src="${this.getAttribute(
+				"src"
+			)}" />
+            
+        `
+		);
 	})
 );

@@ -117,11 +117,21 @@ header {
 	flex-wrap: wrap;
 }
 
-.shop-window-Description {
+.shop-window-description {
 	position: absolute;
 	display: flex;
+	align-items: center;
+	justify-content: center;
 	background-color: green;
 	right: 0;
 	width: 35%;
-	height: 100%;
+	height: 60%;
+}
+
+.shop-window-description-image {
+}
+
+.shop-window-description-about {
+	background-color: darkcyan;
+	position: relative;
 }
