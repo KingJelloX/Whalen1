@@ -1,12 +1,5 @@
 @import url(variables.css);
-
-#app {
-	font-family: "Bitter", serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	text-align: center;
-	color: #2c3e50;
-}
+@import url(friz-quadrata.css);
 
 html,
 body,
@@ -16,9 +9,11 @@ body,
 	box-sizing: border-box;
 	font-size: 62.5%;
 	color: var(--text-color);
+	font-family: var(--main-font);
 }
 
 header {
+	font-family: "Friz Quadrata Regular OS";
 	background-color: var(--heading-color);
 	font-size: 8rem;
 	display: flex;
@@ -30,56 +25,88 @@ header {
 .shop-window {
 	display: flex;
 	position: relative;
-	height: 80rem;
-	width: 70vw;
+	height: 105rem;
+	width: 156rem;
 	margin: auto;
-	margin-top: 9%;
+	margin-top: 3%;
+	margin-bottom: 3%;
 	background-color: grey;
 	flex-direction: column;
+	border: 1rem solid var(--border);
 }
 
 .shop-window-navbar {
 	display: flex;
 	flex-direction: column;
 	position: absolute;
-	width: 65%;
+	width: 62%;
 	height: 15%;
 	background-color: blue;
 }
 
 .shop-window-navbar-search {
 	text-align: center;
-	margin-top: 30px;
+	margin-top: 2rem;
 	height: 50%;
 }
 
 .shop-window-navbar-search-bar {
-	height: 50%;
+	height: 5rem;
 	width: 98%;
+	background-color: var(--primary-color);
+	border-color: var(--border);
+	border-width: 0.2rem;
 }
 
 .shop-window-navbar-buttons {
+	margin-left: 1rem;
 	bottom: 0;
-	height: 50%;
+	height: 80%;
 	display: flex;
 	flex-direction: row;
+	align-items: center;
 }
 
 .navbar-icon {
-	width: 3rem;
-	height: 3rem;
+	padding-right: 1.25rem;
+	padding-left: 1.25rem;
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+	width: 7rem;
+	height: 7rem;
 }
 
 .shop-window-itemDisplay {
 	position: absolute;
 	bottom: 0;
-	width: 65%;
+	width: 62%;
 	height: 85%;
 	background-color: red;
 	display: flex;
 	flex-direction: column;
 	overflow-y: scroll;
 	font-size: 5rem;
+	padding-top: 3rem;
+}
+
+.shop-window-itemDisplay-class {
+	margin-left: 1.5rem;
+	font-family: var(--secondary-font);
+}
+
+.item {
+	width: 6rem;
+	height: 6rem;
+	margin: 1.25rem;
+	margin-bottom: 0;
+	border: 0.3rem solid var(--border);
+}
+
+.display-cost {
+	justify-content: center;
+	text-align: center;
+	font-size: var(--large);
+	font-family: var(--secondary-font);
 }
 
 .shop-window-itemDisplay-mythic {
@@ -87,6 +114,9 @@ header {
 	width: 100%;
 	background-color: purple;
 	flex-wrap: wrap;
+	padding: 1rem;
+	padding-left: 0;
+	margin-bottom: 2.5rem;
 }
 
 .shop-window-itemDisplay-legendary {
@@ -94,6 +124,9 @@ header {
 	width: 100%;
 	background-color: pink;
 	flex-wrap: wrap;
+	padding: 1rem;
+	padding-left: 0;
+	margin-bottom: 2.5rem;
 }
 
 .shop-window-itemDisplay-epic {
@@ -101,6 +134,9 @@ header {
 	width: 100%;
 	background-color: orange;
 	flex-wrap: wrap;
+	padding: 1rem;
+	padding-left: 0;
+	margin-bottom: 2.5rem;
 }
 
 .shop-window-itemDisplay-basic {
@@ -108,6 +144,9 @@ header {
 	width: 100%;
 	background-color: yellow;
 	flex-wrap: wrap;
+	padding: 1rem;
+	padding-left: 0;
+	margin-bottom: 2.5rem;
 }
 
 .shop-window-itemDisplay-starter {
@@ -115,6 +154,9 @@ header {
 	width: 100%;
 	background-color: palegoldenrod;
 	flex-wrap: wrap;
+	padding: 1rem;
+	padding-left: 0;
+	margin-bottom: 2.5rem;
 }
 
 .shop-window-description {
@@ -122,7 +164,7 @@ header {
 	display: flex;
 	background-color: green;
 	right: 0;
-	width: 35%;
+	width: 38%;
 	height: 100%;
 	flex-direction: column;
 	align-items: center;
@@ -142,4 +184,47 @@ header {
 	width: 100%;
 	height: 40%;
 	bottom: 0;
+	font-size: var(--medium);
+}
+
+.shop-window-description-about-image {
+	margin-right: 2rem;
+}
+
+.shop-window-description-about-title {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	height: 20%;
+	margin: 2rem;
+	margin-left: 3rem;
+}
+
+.shop-window-description-about-name {
+	font-size: var(--large);
+}
+
+.shop-window-description-about-cost {
+	font-size: var(--large);
+}
+
+.shop-window-description-about-text {
+	height: 52%;
+	bottom: 0;
+	overflow-y: scroll;
+	margin: 2rem;
+	padding-right: 2.3rem;
+}
+
+.shop-window-description-about-stats {
+	font-size: var(--extra-large);
+	list-style-type: none;
+	margin-bottom: 2.5rem;
+	font-family: var(--secondary-font);
+}
+
+.shop-window-description-about-description {
+	margin-top: 2.5rem;
+	font-size: var(--medium);
+	font-family: var(--secondary-font);
 }

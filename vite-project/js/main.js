@@ -6,12 +6,12 @@ import { epic } from "./items/epic-items";
 import { basic } from "./items/basic-items";
 import { starter } from "./items/starter-items";
 import { clearItems, insertItems, showItem } from "./function";
-export { allItems };
 
 //_____Combine item array into one_____//
 const allItems = basic.concat(epic, legendary, mythic, starter);
 
 insertItems(allItems);
+showItem();
 
 //__________Filter through item class__________//
 const fighterItems = allItems.filter((item) => item.class.includes("fighter"));
@@ -60,7 +60,4 @@ domSelectorIcon.support.addEventListener("click", function () {
 	clearItems();
 	insertItems(supportItems);
 	showItem();
-	showItem();
 });
-
-showItem();

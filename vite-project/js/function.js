@@ -1,5 +1,11 @@
 import { domSelectorDiv } from "./domSelector";
-import { allItems } from "./main";
+import { mythic } from "./items/mythic-items";
+import { legendary } from "./items/legendary-items";
+import { epic } from "./items/epic-items";
+import { basic } from "./items/basic-items";
+import { starter } from "./items/starter-items";
+
+const allItems = basic.concat(epic, legendary, mythic, starter);
 
 //_____Clear shop items_____//
 function clearItems() {
@@ -19,7 +25,7 @@ function insertItems(items) {
 				"afterbegin",
 				`<div>
             <img class="item" id="${items[i].icon}" src="../images/${items[i].icon}" />
-		    <p>${items[i].cost}</p>
+		    <p class="display-cost">${items[i].cost}</p>
 		</div>`
 			);
 		} else if (items[i].type === "legendary") {
@@ -27,7 +33,7 @@ function insertItems(items) {
 				"afterbegin",
 				`<div>
             <img class="item" id="${items[i].icon}" src="../images/${items[i].icon}" />
-		    <p>${items[i].cost}</p>
+		    <p class="display-cost">${items[i].cost}</p>
 		</div>`
 			);
 		} else if (items[i].type === "epic") {
@@ -35,7 +41,7 @@ function insertItems(items) {
 				"afterbegin",
 				`<div>
             <img class="item" id="${items[i].icon}" src="../images/${items[i].icon}" />
-		    <p>${items[i].cost}</p>
+		    <p class="display-cost">${items[i].cost}</p>
 		</div>`
 			);
 		} else if (items[i].type === "basic") {
@@ -43,7 +49,7 @@ function insertItems(items) {
 				"afterbegin",
 				`<div>
             <img class="item" id="${items[i].icon}" src="../images/${items[i].icon}" />
-		    <p>${items[i].cost}</p>
+		    <p class="display-cost">${items[i].cost}</p>
 		</div>`
 			);
 		} else if (items[i].type === "starter") {
@@ -51,7 +57,7 @@ function insertItems(items) {
 				"afterbegin",
 				`<div>
             <img class="item" id="${items[i].icon}" src="../images/${items[i].icon}" />
-		    <p>${items[i].cost}</p>
+		    <p class="display-cost"> ${items[i].cost}</p>
 		</div>`
 			);
 		}
@@ -60,7 +66,7 @@ function insertItems(items) {
 
 //_____Allow item to be displayed on about panel_____//
 function showItem() {
-	let domSelectorItem = {
+	const domSelectorItem = {
 		item: document.querySelectorAll(".item"),
 	};
 
