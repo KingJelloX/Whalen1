@@ -197,7 +197,6 @@ header {
 .shop-window-description-about-image {
   margin-right: 2rem;
 }
-
 .shop-window-description-about-title {
   display: flex;
   flex-direction: row;
@@ -237,7 +236,6 @@ header {
 }
 .item:hover {
   display: inline-block;
-  vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -300,4 +298,17 @@ header {
   border-color: var(--highlight-1);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
+}
+.shop-window-description-about-description-2 {
+  margin-top: 2rem;
+}
+::-webkit-scrollbar-track {
+  background: var(--primary-color);
+}
+::-webkit-scrollbar {
+  width: 1rem;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--search-border);
+  border-radius: 500rem;
 }
