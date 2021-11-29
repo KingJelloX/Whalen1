@@ -11,8 +11,10 @@ const mythic = [
 			"+600 mana",
 			"+6 magic penetration",
 		],
-		description:
+		description: [
 			"UNIQUE – ECHO: Dealing ability damage to an enemy deals 100 (+ 10% AP) additional magic damage to them and launches orbs at up to 3 other enemies within  600 units around them, impacting after 0.528 seconds to deal the same damage to each, and grants you 15% bonus movement speed for 2 seconds. Dealing ability damage against champions reduces the cooldown of Echo by 0.5 seconds per champion, up to a maximum of 3 seconds per cast (10 second cooldown).",
+			"MYTHIC PASSIVE: Empowers each of your other Legendary items with 5 magic penetration.",
+		],
 	},
 	{
 		name: "Duskblade of Draktharr",

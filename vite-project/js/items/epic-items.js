@@ -8,6 +8,15 @@ const epic = [
 		stats: ["+15 attack damage", "+10% life steal"],
 		description: "",
 	},
+	{
+		name: "Serrated Dirk",
+		type: "epic",
+		class: ["assassin"],
+		cost: 1100,
+		icon: "Serrated_Dirk_item.png",
+		stats: [""],
+		description: "",
+	},
 ];
 
 export { epic };

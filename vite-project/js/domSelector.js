@@ -15,8 +15,11 @@ const domSelectorDiv = {
 	cost: document.querySelector(".shop-window-description-about-cost"),
 	image: document.querySelector(".shop-window-description-about-image"),
 	statsList: document.querySelector(".shop-window-description-about-stats"),
-	description: document.querySelector(
-		".shop-window-description-about-description"
+	description1: document.querySelector(
+		".shop-window-description-about-description-1"
+	),
+	description2: document.querySelector(
+		".shop-window-description-about-description-2"
 	),
 
 	//_____Search bar_____//
