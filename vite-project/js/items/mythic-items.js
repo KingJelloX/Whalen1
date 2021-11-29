@@ -27,8 +27,10 @@ const mythic = [
 			"+20 ability haste",
 			"+18 Lethality (11.2 − 18 (based on level) armor penetration)",
 		],
-		description:
+		description: [
 			"UNIQUE – NIGHTSTALKER: Your next basic attack against an enemy champion deals (Melee 75 / Range 55)(+ (Melee 30% / Ranged 25%) bonus AD) bonus physical damage on-hit and slows the target by 99% for 0.25 seconds (15 second cooldown). Scoring a takedown against an enemy champion within 3 seconds of damaging them resets this effect's cooldown and grants you invisibility for 1.5 seconds.",
+			"",
+		],
 	},
 ];
 

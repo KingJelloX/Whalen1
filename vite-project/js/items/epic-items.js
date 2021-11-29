@@ -6,7 +6,7 @@ const epic = [
 		cost: 900,
 		icon: "Vampiric_Scepter_item.png",
 		stats: ["+15 attack damage", "+10% life steal"],
-		description: "",
+		description: ["", ""],
 	},
 	{
 		name: "Serrated Dirk",
@@ -15,7 +15,7 @@ const epic = [
 		cost: 1100,
 		icon: "Serrated_Dirk_item.png",
 		stats: [""],
-		description: "",
+		description: ["", ""],
 	},
 ];
 
