@@ -76,7 +76,8 @@ function showItem() {
 			domSelectorDiv.descriptionImg.innerHTML = "";
 			domSelectorDiv.name.innerHTML = "";
 			domSelectorDiv.statsList.innerHTML = "";
-			domSelectorDiv.description.innerHTML = "";
+			domSelectorDiv.description1.innerHTML = "";
+			domSelectorDiv.description2.innerHTML = "";
 
 			//_____Show item img on about panel_____//
 			domSelectorDiv.descriptionImg.insertAdjacentHTML(
@@ -103,7 +104,8 @@ function showItem() {
 					"beforeend",
 					`<li>${stat}</li>`
 				);
-				domSelectorDiv.description.innerHTML = `${find[0].description}`;
+				domSelectorDiv.description1.innerHTML = `${find[0].description[0]}`;
+				domSelectorDiv.description2.innerHTML = `${find[0].description[1]}`;
 			});
 		})
 	);
