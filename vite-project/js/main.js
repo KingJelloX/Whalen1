@@ -61,3 +61,15 @@ domSelectorIcon.support.addEventListener("click", function () {
 	insertItems(supportItems);
 	showItem();
 });
+
+//_____Search bar_____//
+domSelectorDiv.search.onkeyup = function () {
+	let serachValue = domSelectorDiv.search.value.toLocaleLowerCase();
+	console.log(domSelectorDiv.search.value);
+	const searchItems = allItems.filter((item) =>
+		item.name.toLocaleLowerCase().includes(serachValue)
+	);
+	clearItems();
+	insertItems(searchItems);
+	showItem();
+};

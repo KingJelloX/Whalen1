@@ -48,14 +48,20 @@ header {
 	text-align: center;
 	margin-top: 2rem;
 	height: 50%;
+	font-size: var(--extra-large);
 }
 
 .shop-window-navbar-search-bar {
 	height: 5rem;
 	width: 98%;
-	background-color: var(--primary-color);
+	background-color: var(--search-color);
 	border-color: var(--border);
 	border-width: 0.2rem;
+	padding: 1rem;
+}
+
+.shop-window-navbar-search-bar:focus {
+	outline: none;
 }
 
 .shop-window-navbar-buttons {
@@ -99,7 +105,7 @@ header {
 	height: 6rem;
 	margin: 1.25rem;
 	margin-bottom: 0;
-	border: 0.3rem solid var(--border);
+	border: 0.3rem solid var(--item-border);
 }
 
 .display-cost {

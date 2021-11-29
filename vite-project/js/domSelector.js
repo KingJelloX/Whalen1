@@ -18,6 +18,9 @@ const domSelectorDiv = {
 	description: document.querySelector(
 		".shop-window-description-about-description"
 	),
+
+	//_____Search bar_____//
+	search: document.querySelector(".shop-window-navbar-search-bar"),
 };
 
 //_____Navbar icons_____//
