@@ -2,24 +2,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap");
 
 :root {
-	--primary-color: #011725;
-	--border: #a9a17b;
-	--highlight-1: #08d5d9;
-	--search-border: #594a29;
-	--text-color: #beb38a;
-	--heading-color: #111111;
-	--main-font: "Friz Quadrata Regular OS";
-	--secondary-font: "Source Sans Pro', sans-serif";
-	--extra-large: 4rem;
-	--large: 2.6rem;
-	--medium: 2.3rem;
-	--small: 1.5rem;
-}
-
-h1 {
-	font-size: 4rem;
-}
-
-h2 {
-	font-size: 2.3rem;
+  --primary-color: #011725;
+  --border: #a9a17b;
+  --highlight-1: #08d5d9;
+  --search-border: #594a29;
+  --text-color: #beb38a;
+  --heading-color: #111111;
+  --main-font: "Friz Quadrata Regular OS";
+  --secondary-font: "Source Sans Pro', sans-serif";
+  --extra-large: 4rem;
+  --large: 2.6rem;
+  --medium: 2.3rem;
+  --small: 1.5rem;
 }
