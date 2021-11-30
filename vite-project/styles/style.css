@@ -20,6 +20,7 @@ header {
   height: 16rem;
   align-items: center;
   justify-content: center;
+  -webkit-text-stroke: 0.3rem var(--search-border);
 }
 
 .shop-window {
@@ -311,4 +312,33 @@ header {
 ::-webkit-scrollbar-thumb {
   background: var(--search-border);
   border-radius: 500rem;
+}
+.theme-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5rem;
+  font-size: 5rem;
+  padding: 2rem;
+  margin: 5rem;
+  margin-top: 8rem;
+  margin-bottom: 3%;
+}
+button {
+  padding: 2rem;
+  margin: 5rem;
+  color: var(--text-color);
+  background-color: var(--primary-color);
+  border: 0.3rem solid var(--border);
+}
+
+button:active {
+  -webkit-animation-name: hvr-push;
+  animation-name: hvr-push;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
 }
