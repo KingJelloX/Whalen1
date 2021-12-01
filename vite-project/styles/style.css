@@ -10,6 +10,7 @@ body,
   font-size: 62.5%;
   color: var(--text-color);
   font-family: var(--main-font);
+  z-index: 3;
 }
 
 header {
@@ -341,4 +342,10 @@ button:active {
   animation-timing-function: linear;
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
+}
+.background {
+  z-index: 1;
+  height: 62vw;
+  width: 100%;
+  position: absolute;
 }
