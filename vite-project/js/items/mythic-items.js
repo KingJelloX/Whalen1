@@ -37,6 +37,7 @@ const mythic = [
     type: "mythic",
     class: ["fighter"],
     cost: 3300,
+    icon: "Goredrinker_item.png",
     stats: [
       "|+45 attack damage",
       "+20 ability haste",
