@@ -35,6 +35,7 @@ header {
   background-color: grey;
   flex-direction: column;
   border: 1rem solid var(--border);
+  opacity: 90%;
 }
 
 .shop-window-navbar {
@@ -348,4 +349,5 @@ button:active {
   height: 62vw;
   width: 100%;
   position: absolute;
+  background-image: url(/vite-project/images/SR1.png);
 }
