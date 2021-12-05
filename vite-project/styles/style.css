@@ -10,7 +10,7 @@ body,
   font-size: 62.5%;
   color: var(--text-color);
   font-family: var(--main-font);
-  z-index: 3;
+  z-index: 5;
 }
 
 header {
@@ -345,9 +345,7 @@ button:active {
   animation-iteration-count: 1;
 }
 .background {
-  z-index: 1;
   height: 70vw;
   width: 100%;
   position: absolute;
-  background-image: url(/vite-project/images/SR1.png);
 }

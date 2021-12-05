@@ -14,12 +14,11 @@
 	</head>
 	<body>
 		<div id="app"></div>
-		<script type="module" src="/js/main.js"></script>
 		<header>League of Legends</header>
-		<img class="background" src="./images/SR1.png" alt="SR">
+		<img class="background" id="background" src="./images/SR1.png">
 			<div class="theme-button">
-				<button>Summoners Rift</button>
-				<button>ARAM</button>
+				<button class="SR_btn SR">Summoners Rift</button>
+				<button class="ARAM_btn SR">ARAM</button>
 			</div>
 		<div class="shop-window">
 			<navbar class="shop-window-navbar">
@@ -69,7 +68,7 @@
 				</div>
 			</navbar>
 
-			<div class="shop-window-itemDisplay">
+			<div class="shop-window-itemDisplay SR">
 				<div>
 					<h2 class="shop-window-itemDisplay-class">MYTHIC</h2>
 					<div class="shop-window-itemDisplay-mythic"></div>
@@ -91,9 +90,9 @@
 					<div class="shop-window-itemDisplay-starter"></div>
 				</div>
 			</div>
-			<div class="shop-window-description">
+			<div class="shop-window-description SR">
 				<div class="shop-window-description-image"></div>
-				<div class="shop-window-description-about">
+				<div class="shop-window-description-about SR">
 					<div class="shop-window-description-about-title">
 						<img class="shop-window-description-about-image" src="" />
 						<div>
@@ -111,5 +110,6 @@
 				</div>
 			</div>
 		</div>
+	<script type="module" src="/js/main.js"></script>
 	</body>
 </html>
