@@ -82,7 +82,7 @@ function showItem() {
 			//_____Show item img on about panel_____//
 			domSelectorDiv.descriptionImg.insertAdjacentHTML(
 				"afterbegin",
-				`<img class="item shop-window-description-image" src="${this.getAttribute(
+				`<img class="shop-window-description-image" src="${this.getAttribute(
 					"src"
 				)}" />`
 			);

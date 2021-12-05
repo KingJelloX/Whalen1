@@ -16,10 +16,10 @@ showItem();
 //__________Filter through item class__________//
 const fighterItems = allItems.filter((item) => item.class.includes("fighter"));
 const marksmanItems = allItems.filter((item) =>
-	item.class.includes("marksman")
+  item.class.includes("marksman")
 );
 const assassinItems = allItems.filter((item) =>
-	item.class.includes("assassin")
+  item.class.includes("assassin")
 );
 const mageItems = allItems.filter((item) => item.class.includes("mage"));
 const tankItems = allItems.filter((item) => item.class.includes("tank"));
@@ -27,49 +27,56 @@ const supportItems = allItems.filter((item) => item.class.includes("support"));
 
 //_____Change Product list based on item class_____//
 domSelectorIcon.all.addEventListener("click", function () {
-	clearItems();
-	insertItems(allItems);
-	showItem();
+  clearItems();
+  insertItems(allItems);
+  showItem();
 });
 domSelectorIcon.fighter.addEventListener("click", function () {
-	clearItems();
-	insertItems(fighterItems);
-	showItem();
+  clearItems();
+  insertItems(fighterItems);
+  showItem();
 });
 domSelectorIcon.marksman.addEventListener("click", function () {
-	clearItems();
-	insertItems(marksmanItems);
-	showItem();
+  clearItems();
+  insertItems(marksmanItems);
+  showItem();
 });
 domSelectorIcon.assassin.addEventListener("click", function () {
-	clearItems();
-	insertItems(assassinItems);
-	showItem();
+  clearItems();
+  insertItems(assassinItems);
+  showItem();
 });
 domSelectorIcon.mage.addEventListener("click", function () {
-	clearItems();
-	insertItems(mageItems);
-	showItem();
+  clearItems();
+  insertItems(mageItems);
+  showItem();
 });
 domSelectorIcon.tank.addEventListener("click", function () {
-	clearItems();
-	insertItems(tankItems);
-	showItem();
+  clearItems();
+  insertItems(tankItems);
+  showItem();
 });
 domSelectorIcon.support.addEventListener("click", function () {
-	clearItems();
-	insertItems(supportItems);
-	showItem();
+  clearItems();
+  insertItems(supportItems);
+  showItem();
 });
 
 //_____Search bar_____//
 domSelectorDiv.search.onkeyup = function () {
-	let serachValue = domSelectorDiv.search.value.toLocaleLowerCase();
-	console.log(domSelectorDiv.search.value);
-	const searchItems = allItems.filter((item) =>
-		item.name.toLocaleLowerCase().includes(serachValue)
-	);
-	clearItems();
-	insertItems(searchItems);
-	showItem();
+  let serachValue = domSelectorDiv.search.value.toLocaleLowerCase();
+  console.log(domSelectorDiv.search.value);
+  const searchItems = allItems.filter((item) =>
+    item.name.toLocaleLowerCase().includes(serachValue)
+  );
+  clearItems();
+  insertItems(searchItems);
+  showItem();
 };
+
+document.querySelector(".ARAM_btn").addEventListener("click", function () {
+  document.getElementById("background").src = "./images/ARAM.png";
+});
+document.querySelector(".SR_btn").addEventListener("click", function () {
+  document.getElementById("background").src = "./images/SR1.png";
+});

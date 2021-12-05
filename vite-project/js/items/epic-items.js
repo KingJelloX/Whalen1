@@ -6,7 +6,7 @@ const epic = [
 		cost: 900,
 		icon: "Vampiric_Scepter_item.png",
 		stats: ["+15 attack damage", "+10% life steal"],
-		description: "",
+		description: ["", ""],
 	},
 	{
 		name: "Serrated Dirk",
@@ -14,8 +14,11 @@ const epic = [
 		class: ["assassin"],
 		cost: 1100,
 		icon: "Serrated_Dirk_item.png",
-		stats: [""],
-		description: "",
+		stats: ["+30 attack damage"],
+		description: [
+			"UNIQUE – GOUGE: Gain 10 Lethality (6.22 − 10 (based on level) armor penetration).",
+			"",
+		],
 	},
 ];
 

@@ -24,7 +24,7 @@ const starter = [
 		],
 	},
 	{
-		name: "Doran's Bladee",
+		name: "Doran's Blade",
 		type: "starter",
 		class: ["fighter", "marksman", "assassin"],
 		cost: 450,
@@ -112,7 +112,7 @@ const starter = [
 		type: "starter",
 		class: ["tank"],
 		cost: 400,
-		icon: "Cull_item.png",
+		icon: "Steel_Shoulderguards_item.png",
 		stats: [
 			"+3 Attack Damage",
 			"+30 Health",

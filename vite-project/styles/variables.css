@@ -3,27 +3,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Source+Sans+Pro:wght@700&display=swap");
 
 :root {
-	--primary-color: #011725;
-	--border: #a9a17b;
-	--item-border: #3b413e;
-	--highlight-1: #08d5d9;
-	--search-border: #594a29;
-	--search-color: #0c141a;
-	--text-color: #bbb9a4;
-	--heading-color: #111111;
-	--main-font: "Friz Quadrata Regular OS";
-	--third-font: "Source Sans Pro', sans-serif";
-	--secondary-font: "Roboto";
-	--extra-large: 4rem;
-	--large: 3rem;
-	--medium: 2.6rem;
-	--small: 1.5rem;
+  --primary-color: #011725;
+  --border: #a9a17b;
+  --item-border: #3b413e;
+  --highlight-1: #08d5d9;
+  --search-border: #594a29;
+  --search-color: #0c141a;
+  --text-color: #bbb9a4;
+  --heading-color: #111111;
+  --main-font: "Friz Quadrata Regular OS";
+  --third-font: "Source Sans Pro', sans-serif";
+  --secondary-font: "Roboto";
+  --extra-large: 4rem;
+  --large: 3rem;
+  --medium: 2.6rem;
+  --small: 1.5rem;
+  --background: url();
 }
 
 h1 {
-	font-size: 4rem;
+  font-size: 4rem;
 }
 
 h2 {
-	font-size: 2.3rem;
+  font-size: 2.3rem;
 }
