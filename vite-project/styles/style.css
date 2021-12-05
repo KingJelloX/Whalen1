@@ -346,7 +346,7 @@ button:active {
 }
 .background {
   z-index: 1;
-  height: 62vw;
+  height: 70vw;
   width: 100%;
   position: absolute;
   background-image: url(/vite-project/images/SR1.png);
