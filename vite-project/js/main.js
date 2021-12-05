@@ -1,6 +1,82 @@
 import "../styles/style.css";
+import { domSelectorDiv, domSelectorIcon } from "./domSelector";
+import { mythic } from "./items/mythic-items";
+import { legendary } from "./items/legendary-items";
+import { epic } from "./items/epic-items";
+import { basic } from "./items/basic-items";
+import { starter } from "./items/starter-items";
+import { clearItems, insertItems, showItem } from "./function";
 
-document.querySelector("#app").innerHTML = `
-  <h1>Hello Vite!</h1>
-  <a href="https://vitejs.dev/guide/features.html" target="_blank">Documentation</a>
-`;
+//_____Combine item array into one_____//
+const allItems = basic.concat(epic, legendary, mythic, starter);
+
+insertItems(allItems);
+showItem();
+
+//__________Filter through item class__________//
+const fighterItems = allItems.filter((item) => item.class.includes("fighter"));
+const marksmanItems = allItems.filter((item) =>
+  item.class.includes("marksman")
+);
+const assassinItems = allItems.filter((item) =>
+  item.class.includes("assassin")
+);
+const mageItems = allItems.filter((item) => item.class.includes("mage"));
+const tankItems = allItems.filter((item) => item.class.includes("tank"));
+const supportItems = allItems.filter((item) => item.class.includes("support"));
+
+//_____Change Product list based on item class_____//
+domSelectorIcon.all.addEventListener("click", function () {
+  clearItems();
+  insertItems(allItems);
+  showItem();
+});
+domSelectorIcon.fighter.addEventListener("click", function () {
+  clearItems();
+  insertItems(fighterItems);
+  showItem();
+});
+domSelectorIcon.marksman.addEventListener("click", function () {
+  clearItems();
+  insertItems(marksmanItems);
+  showItem();
+});
+domSelectorIcon.assassin.addEventListener("click", function () {
+  clearItems();
+  insertItems(assassinItems);
+  showItem();
+});
+domSelectorIcon.mage.addEventListener("click", function () {
+  clearItems();
+  insertItems(mageItems);
+  showItem();
+});
+domSelectorIcon.tank.addEventListener("click", function () {
+  clearItems();
+  insertItems(tankItems);
+  showItem();
+});
+domSelectorIcon.support.addEventListener("click", function () {
+  clearItems();
+  insertItems(supportItems);
+  showItem();
+});
+
+//_____Search bar_____//
+domSelectorDiv.search.onkeyup = function () {
+  let serachValue = domSelectorDiv.search.value.toLocaleLowerCase();
+  console.log(domSelectorDiv.search.value);
+  const searchItems = allItems.filter((item) =>
+    item.name.toLocaleLowerCase().includes(serachValue)
+  );
+  clearItems();
+  insertItems(searchItems);
+  showItem();
+};
+
+document.querySelector(".ARAM_btn").addEventListener("click", function () {
+  document.getElementById("background").src = "./images/ARAM.png";
+});
+document.querySelector(".SR_btn").addEventListener("click", function () {
+  document.getElementById("background").src = "./images/SR1.png";
+});
